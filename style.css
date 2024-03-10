@@ -69,7 +69,7 @@ transition: 0.3s;
 #right-nav{
 display: flex;
 }
-.navlink:hover,.navlink.active,i#bar-icon:hover{
+.navlink:hover,.navlink.active,i#bar-icon:hover,i#xmark-icon:hover{
     color: var(--lovecolor);
 }
 .navlink:hover::after,.navlink.active::after{
@@ -81,23 +81,47 @@ display: none;
 font-size: 1.5rem;    
 }
 
+i#xmark-icon{
+    display: none;
+}
+
 @media (max-width:775px) {
-    
-    #right-nav ul{
-        display: none;
+    i#xmark-icon{
+        display: block;     
         }
+        #right-nav ul {
+             display: none;
+            background-color:var(--themeColor);
+            position: absolute;
+            top: -15px;
+            right: -30px;
+            flex-direction: column;
+            height: 100vh;
+            z-index: 5;
+            align-items: flex-start;
+            padding-top: 20px;
+            width: 40vw;
+            box-shadow: 0px 0px 19px -4px gray;
+            
+        }
+        #right-nav ul li{
+
+          margin-block: 10px;
+
+
+        }
+
+
+
+
         i#bar-icon{
             display: block;
             }
 
-}
-
-
-
-
-
-
-
+            i#cart-icon,i#xmark-icon{
+               font-size: 1.5rem;
+                }
+            }
 
 
 
@@ -157,29 +181,26 @@ height: 100vh;
 /* feature */
 
 #feature{
-
 margin-top: 100px;
-
-
-
 }
-
-
 
 #feature-gallery{
 display: flex;
 align-items: center;
 justify-content: space-evenly;
+flex-wrap: wrap;
 
 }
 
 .feature-items{
+    position: relative;
     text-align: center;
     border: 1px solid #f7f7f7;
     padding-block: 16px;
     box-shadow: 0px 0px 30px #c5c0c0;
     border-radius: 5px;
     width: 150px;
+    margin: 9px 9px;
 }
 
 .feature-title{
@@ -233,6 +254,7 @@ width: 100%;
 display: flex;
 justify-content:center;
 margin-top: 20px;
+flex-wrap: wrap;
 }
 
 .product-item{
@@ -242,8 +264,9 @@ width: 250px;
 border-radius: 15px;
 padding: 10px;
 line-height: 1.4;
-margin-inline: 15px;
+margin: 15px ;
 transition: 0.3s;
+
 }
 .product-item:hover{
     box-shadow: 0px 0px 6px #80808085;
@@ -294,21 +317,75 @@ span.cart:hover{
 span.cart:active{
     transform: scale(0.8);
 }
-
-
-
-
-
 span.cart i{
     color: var(--lovecolor);
 }
 
 
 
+/* Cale to sale */
+.herit{
+    margin-block: 20px;
+}
+
+#sale-banner{
+    position: relative;
+    width: 100%;
+}
+
+#sale-content{
+    text-align: center;
+position: relative;
+background-image: url("./Images/SaleBanner.jpg");
+padding-block: 50px;
+}
+
+button.action-btn{
+padding-inline: 20px;
+padding-block: 10px;
+transition: 0.8s;
+outline: none;
+border: none;
+border-radius: 3px;
+}
+
+#sale-content p.medium-black,#sale-content h2.parent-size{
+    color: whitesmoke;
+}
+#sale-content h2.parent-size{
+    font-size: 2rem;
+}
+
+#sale-content button,#sale-content p.medium-black,#sale-content h2.parent-size{
+    margin-block: 10px;
+}
+
+button.action-btn:hover{
+    background-color: var(--lovecolor);
+    color: whitesmoke;
+}
+
+.red-effect{
+
+    color: rgb(196, 19, 19);
+}
 
 
+/* Banners */
+#banners{
+    position: relative;
+}
 
+.banner-item h2.parent-size{
+    font-size: 1.6rem;
+}
 
+#banner-row2 .banner-item h2{
+    text-transform: uppercase;
+}
+#banner-row2 .banner-item p{
+    color: rgb(196, 19, 19);
+}
 
 
 

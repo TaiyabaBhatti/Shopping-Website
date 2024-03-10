@@ -20,14 +20,15 @@
 </div>
 <div id="right-nav">
 <ul>
+    <li><i onclick="hideSidebar()" class="fa-solid fa-xmark" id="xmark-icon"></i></li>
 <li><a href="" class="navlink active">Home</a></li>
 <li><a href="" class="navlink">Shop</a></li>
 <li><a href="" class="navlink">Blog</a></li>
 <li><a href="" class="navlink">About</a></li>
 <li><a href="" class="navlink">Contact</a></li>
-<li><a href="" class="navlink"><i class="fa-solid fa-cart-shopping"></i></a></li>
 </ul>
-<li><i onclick="IconChange()" class="fa-solid fa-bars" id="bar-icon"></i></li>
+<li><a href="" class="navlink"><i class="fa-solid fa-cart-shopping" id="cart-icon"></i></a></li>
+<li><i onclick="displaySidebar()" class="fa-solid fa-bars" id="bar-icon"></i></li>
 </div>
 
 
@@ -100,7 +101,7 @@ Featured Products
       <div class="product-item">
        <img src="./Images/fig1.jpg" alt="product-image">
 <p class="light-paragraph" aria-labelledby="brand-name">adidas</p>
-<h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut</h4>
+<h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut T-Shirt</h4>
 <span class="reviews" aria-labelledby="reviews">
     <i class="fa-solid fa-star"></i>
     <i class="fa-solid fa-star"></i>
@@ -112,9 +113,9 @@ Featured Products
 <span class="cart" aria-labelledby="add-to-cart"><i class="fa-solid fa-cart-shopping"></i></span>
     </div>
     <div class="product-item">
-        <img src="./Images/fig1.jpg" alt="product-image">
+        <img src="./Images/fig2.jpg" alt="product-image">
  <p class="light-paragraph" aria-labelledby="brand-name">adidas</p>
- <h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut</h4>
+ <h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut T-Shirt</h4>
  <span class="reviews" aria-labelledby="reviews">
      <i class="fa-solid fa-star"></i>
      <i class="fa-solid fa-star"></i>
@@ -126,9 +127,9 @@ Featured Products
  <span class="cart" aria-labelledby="add-to-cart"><i class="fa-solid fa-cart-shopping"></i></span>
      </div>
      <div class="product-item">
-        <img src="./Images/fig1.jpg" alt="product-image">
+        <img src="./Images/fig3.jpg" alt="product-image">
  <p class="light-paragraph" aria-labelledby="brand-name">adidas</p>
- <h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut</h4>
+ <h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut T-Shirt</h4>
  <span class="reviews" aria-labelledby="reviews">
      <i class="fa-solid fa-star"></i>
      <i class="fa-solid fa-star"></i>
@@ -140,9 +141,9 @@ Featured Products
  <span class="cart" aria-labelledby="add-to-cart"><i class="fa-solid fa-cart-shopping"></i></span>
      </div>
      <div class="product-item">
-        <img src="./Images/fig1.jpg" alt="product-image">
+        <img src="./Images/fig4.jpg" alt="product-image">
  <p class="light-paragraph" aria-labelledby="brand-name">adidas</p>
- <h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut</h4>
+ <h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut T-Shirt</h4>
  <span class="reviews" aria-labelledby="reviews">
      <i class="fa-solid fa-star"></i>
      <i class="fa-solid fa-star"></i>
@@ -157,9 +158,9 @@ Featured Products
 
 <div class="featured-products-gallery">
     <div class="product-item">
-     <img src="./Images/fig1.jpg" alt="product-image">
+     <img src="./Images/fig5.jpg" alt="product-image">
 <p class="light-paragraph" aria-labelledby="brand-name">adidas</p>
-<h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut</h4>
+<h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut T-Shirt</h4>
 <span class="reviews" aria-labelledby="reviews">
   <i class="fa-solid fa-star"></i>
   <i class="fa-solid fa-star"></i>
@@ -171,9 +172,9 @@ Featured Products
 <span class="cart" aria-labelledby="add-to-cart"><i class="fa-solid fa-cart-shopping"></i></span>
   </div>
   <div class="product-item">
-      <img src="./Images/fig1.jpg" alt="product-image">
+      <img src="./Images/fig6.jpg" alt="product-image">
 <p class="light-paragraph" aria-labelledby="brand-name">adidas</p>
-<h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut</h4>
+<h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut T-Shirt</h4>
 <span class="reviews" aria-labelledby="reviews">
    <i class="fa-solid fa-star"></i>
    <i class="fa-solid fa-star"></i>
@@ -185,9 +186,9 @@ Featured Products
 <span class="cart" aria-labelledby="add-to-cart"><i class="fa-solid fa-cart-shopping"></i></span>
    </div>
    <div class="product-item">
-      <img src="./Images/fig1.jpg" alt="product-image">
+      <img src="./Images/fig7.jpg" alt="product-image">
 <p class="light-paragraph" aria-labelledby="brand-name">adidas</p>
-<h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut</h4>
+<h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut T-Shirt</h4>
 <span class="reviews" aria-labelledby="reviews">
    <i class="fa-solid fa-star"></i>
    <i class="fa-solid fa-star"></i>
@@ -199,9 +200,9 @@ Featured Products
 <span class="cart" aria-labelledby="add-to-cart"><i class="fa-solid fa-cart-shopping"></i></span>
    </div>
    <div class="product-item">
-      <img src="./Images/fig1.jpg" alt="product-image">
+      <img src="./Images/fig8.jpg" alt="product-image">
 <p class="light-paragraph" aria-labelledby="brand-name">adidas</p>
-<h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut</h4>
+<h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut T-Shirt</h4>
 <span class="reviews" aria-labelledby="reviews">
    <i class="fa-solid fa-star"></i>
    <i class="fa-solid fa-star"></i>
@@ -226,6 +227,140 @@ Featured Products
 
 </section>
 
+<!-- Call to Sale -->
+<section id="sale-banner" class="herit">
+<div id="sale-content" aria-labelledby="sale banner">
+
+<p class="medium-black">Repair Services</p>
+<h2  class="parent-size" >Upto <span class="red-effect">70% off</span> -All t-Shirts and Accessories</h2>
+<Button class="action-btn">Explore More</Button>
+</div>
+</section>
+
+<!-- New Arrivals -->
+<section id="featured-products" class="section herit new-arrivals">
+
+    <h2 class="parent-size">
+New Arrivals
+    </h2>
+    <p class="light-paragraph">Summer collection new modern designs</p>
+    <div class="featured-products-gallery">
+      <div class="product-item">
+       <img src="./Images/n1.jpg" alt="product-image">
+<p class="light-paragraph" aria-labelledby="brand-name">adidas</p>
+<h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut T-Shirt</h4>
+<span class="reviews" aria-labelledby="reviews">
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star-half-stroke"></i>
+    <i class="fa-regular fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+</span>
+<p class="product-price" aria-labelledby="product-price">&#36 78</p>
+<span class="cart" aria-labelledby="add-to-cart"><i class="fa-solid fa-cart-shopping"></i></span>
+    </div>
+    <div class="product-item">
+        <img src="./Images/n2.jpg" alt="product-image">
+ <p class="light-paragraph" aria-labelledby="brand-name">adidas</p>
+ <h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut T-Shirt</h4>
+ <span class="reviews" aria-labelledby="reviews">
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star-half-stroke"></i>
+     <i class="fa-regular fa-star"></i>
+     <i class="fa-regular fa-star"></i>
+ </span>
+ <p class="product-price" aria-labelledby="product-price">&#36 78</p>
+ <span class="cart" aria-labelledby="add-to-cart"><i class="fa-solid fa-cart-shopping"></i></span>
+     </div>
+     <div class="product-item">
+        <img src="./Images/n3.jpg" alt="product-image">
+ <p class="light-paragraph" aria-labelledby="brand-name">adidas</p>
+ <h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut T-Shirt</h4>
+ <span class="reviews" aria-labelledby="reviews">
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star-half-stroke"></i>
+     <i class="fa-regular fa-star"></i>
+     <i class="fa-regular fa-star"></i>
+ </span>
+ <p class="product-price" aria-labelledby="product-price">&#36 78</p>
+ <span class="cart" aria-labelledby="add-to-cart"><i class="fa-solid fa-cart-shopping"></i></span>
+     </div>
+     <div class="product-item">
+        <img src="./Images/n4.jpg" alt="product-image">
+ <p class="light-paragraph" aria-labelledby="brand-name">adidas</p>
+ <h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut T-Shirt</h4>
+ <span class="reviews" aria-labelledby="reviews">
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star-half-stroke"></i>
+     <i class="fa-regular fa-star"></i>
+     <i class="fa-regular fa-star"></i>
+ </span>
+ <p class="product-price" aria-labelledby="product-price">&#36 78</p>
+ <span class="cart" aria-labelledby="add-to-cart"><i class="fa-solid fa-cart-shopping"></i></span>
+     </div>
+</div>
+
+<div class="featured-products-gallery">
+    <div class="product-item">
+     <img src="./Images/n5.jpg" alt="product-image">
+<p class="light-paragraph" aria-labelledby="brand-name">adidas</p>
+<h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut T-Shirt</h4>
+<span class="reviews" aria-labelledby="reviews">
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star-half-stroke"></i>
+  <i class="fa-regular fa-star"></i>
+  <i class="fa-regular fa-star"></i>
+</span>
+<p class="product-price" aria-labelledby="product-price">&#36 78</p>
+<span class="cart" aria-labelledby="add-to-cart"><i class="fa-solid fa-cart-shopping"></i></span>
+  </div>
+  <div class="product-item">
+      <img src="./Images/n6.jpg" alt="product-image">
+<p class="light-paragraph" aria-labelledby="brand-name">adidas</p>
+<h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut T-Shirt</h4>
+<span class="reviews" aria-labelledby="reviews">
+   <i class="fa-solid fa-star"></i>
+   <i class="fa-solid fa-star"></i>
+   <i class="fa-solid fa-star-half-stroke"></i>
+   <i class="fa-regular fa-star"></i>
+   <i class="fa-regular fa-star"></i>
+</span>
+<p class="product-price" aria-labelledby="product-price">&#36 78</p>
+<span class="cart" aria-labelledby="add-to-cart"><i class="fa-solid fa-cart-shopping"></i></span>
+   </div>
+   <div class="product-item">
+      <img src="./Images/n7.jpg" alt="product-image">
+<p class="light-paragraph" aria-labelledby="brand-name">adidas</p>
+<h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut T-Shirt</h4>
+<span class="reviews" aria-labelledby="reviews">
+   <i class="fa-solid fa-star"></i>
+   <i class="fa-solid fa-star"></i>
+   <i class="fa-solid fa-star-half-stroke"></i>
+   <i class="fa-regular fa-star"></i>
+   <i class="fa-regular fa-star"></i>
+</span>
+<p class="product-price" aria-labelledby="product-price">&#36 78</p>
+<span class="cart" aria-labelledby="add-to-cart"><i class="fa-solid fa-cart-shopping"></i></span>
+   </div>
+   <div class="product-item">
+      <img src="./Images/n8.jpg" alt="product-image">
+<p class="light-paragraph" aria-labelledby="brand-name">adidas</p>
+<h4 class="mid-black" aria-labelledby="product-name">Cartoon Astronaut T-Shirt</h4>
+<span class="reviews" aria-labelledby="reviews">
+   <i class="fa-solid fa-star"></i>
+   <i class="fa-solid fa-star"></i>
+   <i class="fa-solid fa-star-half-stroke"></i>
+   <i class="fa-regular fa-star"></i>
+   <i class="fa-regular fa-star"></i>
+</span>
+<p class="product-price" aria-labelledby="product-price">&#36 78</p>
+<span class="cart" aria-labelledby="add-to-cart"><i class="fa-solid fa-cart-shopping"></i></span>
+   </div>
+</div>
 
 
 
@@ -235,6 +370,64 @@ Featured Products
 
 
 
+
+
+</section>
+
+<!-- Banners -->
+<section id="banners" aria-labelledby="banners" class="section herit">
+
+<div id="banner-row1" aria-labelledby="call-to-banners">
+<div class="banner-item row1">
+
+<p class="medium-black">Crazy deals</p>
+<h2 class="parent-size">Buy 1 get 1 free</h2>
+<p class="light-paragraph">The best classic dress is on sale at cara</p>
+<button class="action-btn">Learn more</button>
+
+</div>
+<div class="banner-item row1">
+
+    <p class="medium-black">Spring/Summer</p>
+<h2 class="parent-size">upcoming season</h2>
+<p class="light-paragraph">The best classic dress is on sale at cara</p>
+<button class="action-btn">Collection</button>
+
+</div>
+</div>
+
+<div id="banner-row2" aria-labelledby="text-banners">
+
+    <div class="banner-item row2-col1">
+       
+        <h2 class="parent-size">Season Sale</h2>
+        <p class="medium-black">winter collection 50% off</p>
+
+    </div>
+    <div class="banner-item row2-col2">
+
+        <h2 class="parent-size">New Footwear collection</h2>
+        <p class="medium-black">Sping/Summer 2024</p>
+
+    </div>
+    <div class="banner-item row2-col3">
+
+        <h2 class="parent-size">T-shirts</h2>
+        <p class="medium-black">new trending shirts</p>
+
+
+    </div>
+
+</div>
+</section>
+
+           
+          
+          
+          
+          
+           
+           
 
 
 

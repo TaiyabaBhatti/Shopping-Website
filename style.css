@@ -341,12 +341,15 @@ padding-block: 50px;
 }
 
 button.action-btn{
-padding-inline: 20px;
-padding-block: 10px;
+padding-inline: 10px;
+padding-block: 5px;
 transition: 0.8s;
 outline: none;
-border: none;
+border: 1px solid whitesmoke;
 border-radius: 3px;
+background-color: transparent;
+color: whitesmoke;
+margin-top: 10px;
 }
 
 #sale-content p.medium-black,#sale-content h2.parent-size{
@@ -363,29 +366,161 @@ border-radius: 3px;
 button.action-btn:hover{
     background-color: var(--lovecolor);
     color: whitesmoke;
+    border:none;
 }
 
 .red-effect{
 
     color: rgb(196, 19, 19);
+    font-size: 0.7rem;
+    font-weight: bolder;
 }
 
 
 /* Banners */
 #banners{
     position: relative;
+    color: whitesmoke;
 }
+
+.banner-item {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.first-box{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.second-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+.row1{
+    width: 49%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.row2{
+    width: 33%;
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+}
+
+
+
 
 .banner-item h2.parent-size{
-    font-size: 1.6rem;
+    font-size: 1.1rem;
+    color: whitesmoke;
+    font-weight: bolder;
 }
 
-#banner-row2 .banner-item h2{
+.banner-item h2{
     text-transform: uppercase;
+    
 }
-#banner-row2 .banner-item p{
+.banner-item p.red-mark{
     color: rgb(196, 19, 19);
+    font-size: 0.8rem;
+    font-weight: bolder;
 }
+
+
+
+#left-banner{
+background-image: url("./Images/b17.jpg");
+}
+
+#right-banner{
+background-image: url("./Images/b10.jpg");
+}
+
+
+
+
+.row2-col1{
+background-image: url("./Images/b7.jpg");
+}
+.row2-col2{
+    background-image: url("./Images/b4.jpg");
+    
+}
+ .row2-col3{
+    background-image: url("./Images/b18.jpg");
+    
+}
+
+
+@media (max-width:623px) {
+    .first-box,.second-box{
+     flex-direction: column;
+    }
+    
+
+.row1,.row2{
+    width: 100%;
+    margin-block: 5px;
+}
+
+
+}
+
+
+/* Newlwtters */
+
+
+#newletters{
+    margin-top: 20px;
+}
+
+#newsletter-content p.light-paragraph span.mark{
+color: rgb(255, 187, 0);
+}
+#newsletter-content h3.newletter-title{
+text-transform: capitalize;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

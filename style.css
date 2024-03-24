@@ -496,9 +496,13 @@ color: rgb(255, 187, 0);
 }
 #newsletter-content h3.newletter-title{
 text-transform: capitalize;
-
-
 }
+
+#sign-up input{
+outline: none;
+padding-block: 5px;
+}
+
 
 
 

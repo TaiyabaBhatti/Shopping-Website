@@ -486,6 +486,15 @@ background-image: url("./Images/b7.jpg");
 
 /* Newlwtters */
 
+section#newletters{
+background-color: #021342;
+display: flex;
+justify-content: space-between;
+padding-inline: 30px;
+padding-block: 30px;
+align-items: center;
+background-image: url("./Images/b14.png");
+}
 
 #newletters{
     margin-top: 20px;
@@ -496,36 +505,113 @@ color: rgb(255, 187, 0);
 }
 #newsletter-content h3.newletter-title{
 text-transform: capitalize;
+color: whitesmoke;
 }
+
 
 #sign-up input{
 outline: none;
-padding-block: 5px;
+border: none;
+padding-block: 7px;
+margin-right: -4px;
+padding-inline: 10px;
+}
+#sign-up button{
+     padding: 7px 10px ;
+    border: none;
+    background-color:  #0a8371;
+    color: whitesmoke;
+}
+
+@media (max-width:760px) {
+    
+section#newletters{
+    flex-direction: column;
+    text-align: center;
+    }
+    #sign-up{
+        margin-top: 10px;
+    
+   }
 }
 
 
+/* Footer  */
 
 
+footer#footer div#footer-columns{
+    margin-top: 40px;
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
+#footer p, #footer a{
+    color:var(--borderVisi);
+    font-size: 0.8rem;
+}
 
+#footer .bold, #footer-col1 p > span.bold {
+    font-weight: bolder;
+    color: black;
+    }
 
+#footer-col4 div#install img{
+    border: 1px solid;
+    border-bottom-color: var(--lovecolor);
+    border-top-color: var(--lovecolor);
+    border-radius: 5px;
+    /* border-bottom: #000000; */
+}
 
+#footer-col2,#footer-col3{
+    display: flex;
+    flex-direction: column;
+}
 
+#footer-col4 div#install, #footer-col4 img.Payment {
+    margin-block: 10px;
+}
 
+#footer-columns  div h4{
+    margin-block: 10px;
+}
 
+#footer-columns  div p, #footer-columns  div a{
+line-height: 1.6;
+}
 
+#footer p.copyright{
+    text-align: center;
+}
 
+#footer a:hover{
+color: #1f87dd;
+text-decoration: underline;
+}
 
+#footer i:hover{
+color: var(--lovecolor);
+}
 
+@media (max-width:600px) {
+    
+    footer#footer div#footer-columns{
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        
+    }       
 
+    footer#footer div#footer-columns> div{
+        display: inline-block;
+        width: 70%;
+        margin-block: 10px;
+   
+    }  
 
-
-
-
-
-
-
-
+}
 
 
 

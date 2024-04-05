@@ -18,12 +18,4 @@ navLinks.style.display="flex";
 
 
 
-
-
-
-
-
-
-
-
      

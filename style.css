@@ -19,7 +19,6 @@ body{
 --lovecolor:#088178;
 --borderVisi:#c5c0c0;
 --reviews: #f39714;
-
 }
 
 .section{
@@ -603,7 +602,6 @@ color: var(--lovecolor);
         align-items: center;
         
     }       
-
     footer#footer div#footer-columns> div{
         display: inline-block;
         width: 70%;

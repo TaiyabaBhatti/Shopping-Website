@@ -13,7 +13,72 @@ navLinks.style.display="flex";
  function hideSidebar(){
     navLinks.style.display="none";
      }
-    
+
+
+
+
+
+
+
+
+
+   //   Functionality for Quantity of products
+
+
+let quantityField = document.getElementById("quantity");
+let invalidField = document.getElementById("invalid");
+
+
+quantityField.addEventListener('input',(key) => {
+
+let number=key.target.value;
+
+   if(isNaN(number)){
+invalidField.style.display="inline";
+    invalidField.textContent="Invlid Number"
+   }
+
+   else if(number<0 || number>10){
+      invalidField.style.display="inline";
+          invalidField.textContent="Cannot add to cart"
+         }
+
+
+
+else{
+      invalidField.style.display="none";
+         }
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}  );
+
+
+
+
+
+
+
 
 
    

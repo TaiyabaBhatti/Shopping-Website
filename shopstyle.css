@@ -444,7 +444,7 @@ margin-bottom: 5px;
 #product-image-gallery img.image{
 width: 7vw;
 }
-#product-image-gallery img.image:hover{
+#product-image-gallery img.image:hover, .add-section button#add-to-cart{
 
 cursor: pointer;
 
@@ -462,7 +462,12 @@ cursor: pointer;
     padding-left: 30px;
 }
 
-
+#invalid{
+    margin-left: 10px;
+    display: none;
+    font-size: 0.7rem;
+    color: rgb(212, 32, 32);
+}
 
 
 

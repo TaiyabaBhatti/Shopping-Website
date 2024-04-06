@@ -41,6 +41,23 @@ else{
 }  );
 
 
+// Functionality for slider
+
+let slideImages=document.getElementsByClassName("image");
+let mainImage=document.getElementById("product");
+
+Array.from(slideImages).forEach(element => {
+element.addEventListener("click",() => {
+mainImage.src=element.src;
+})
+});
+
+
+
+
+
+
+
 
 
 
@@ -53,3 +70,8 @@ else{
 
 
      
+
+
+
+
+

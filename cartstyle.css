@@ -11,17 +11,13 @@ font-size: 1.2rem;
 
 #cart-list{
     margin-top: 40px;
+    padding-inline: 50px;
+    overflow-x: auto;
    
 }
-.headings{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid gray;
-    border-top: 1px solid gray;
-    padding-block: 5px;
-}
 
-td.image img{
+
+.cart-table tbody tr td.image img{
     width: 60px;
     height: 60px;
 }
@@ -37,23 +33,61 @@ td.image img{
 }
 
 .quantity input{
-    width: 35%;
+    width: 50%;
     padding-block: 5px;
     outline: none;
 }
 
-.subtotal{
-    font-family: sans-serif;
-}
+
 
 .cart-table thead tr td{
     text-transform: uppercase;
          font-weight: 900;
 }
 
+.cart-table thead tr {
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+}
+
+.cart-table {
+
+width: 100%;
+border-collapse: collapse;
+table-layout: fixed;
+white-space: nowrap;
+}
+.cart-table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+.cart-table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+.cart-table td:nth-child(3){
+    width: 200px;
+    text-align: center;
+}
+.cart-table td:nth-child(4),.cart-table td:nth-child(5)
+,
+.cart-table td:nth-child(6){
+    width: 210px;
+    text-align: center;
+}
+
+  
+
+
+
+
+
+
+
 
 section#submit-cart{
-   margin-top: 40px;
+   margin-top: 50px;
     }
     .low-text{
     font-size: 1.1rem;
@@ -68,7 +102,7 @@ section#submit-cart{
         margin-right: 2px;
         padding-inline: 10px;
     }
-    #sign-up button{
+    button{
          padding: 7px 10px ;
         border: none;
         background-color:  #0a8371;
@@ -81,3 +115,62 @@ section#submit-cart{
             margin-top: 10px;
        }
     }
+
+    .low-text{
+margin-bottom: 10px;
+font-weight: 900;
+
+    }
+    #sign-up{
+        width: 30%;
+    }
+
+    .subtotal, .price{
+        font-family: sans-serif;
+    }
+
+    #totals{
+        margin-top: 20px;
+        border: 1px solid #e7e7e7;
+        padding: 15px;
+        width: 40%;
+       
+    }
+
+
+    #submit-cart{
+        display: flex;
+        justify-content: center;
+    }
+
+.cart-total{
+   
+    width: 100%;
+border-collapse: collapse;
+table-layout: fixed;
+white-space: nowrap;
+
+}
+
+.cart-total tbody tr:nth-child(1),.cart-total tbody tr:nth-child(2),.cart-total tbody tr:nth-child(3){
+    border: 1px solid #e7e7e7;
+    padding: 5px;
+}
+.cart-total tbody tr td{
+    padding: 5px;
+}
+
+@media  (max-width:860px) {
+    #submit-cart{
+      flex-direction: column;
+      align-items: center;
+padding-inline: 20px;
+    }
+
+
+
+    #sign-up,   #totals{
+        width: 100%;
+    }
+
+}

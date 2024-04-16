@@ -1,0 +1,83 @@
+section#about{
+    background-image: url("./Images/banner.png");
+}
+
+
+/* .headings p.header{
+font-weight:700;
+color: black;
+font-size: 1.2rem;
+} */
+
+#cart-list{
+    margin-top: 40px;
+   
+}
+.headings{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    padding-block: 5px;
+}
+
+td.image img{
+    width: 60px;
+    height: 60px;
+}
+
+.cart-table{
+    text-align: center;
+    margin: auto;
+}
+
+.cart-table td{
+    padding-inline: 30px;
+    padding-block: 15px;
+}
+
+.quantity input{
+    width: 35%;
+    padding-block: 5px;
+    outline: none;
+}
+
+.subtotal{
+    font-family: sans-serif;
+}
+
+.cart-table thead tr td{
+    text-transform: uppercase;
+         font-weight: 900;
+}
+
+
+section#submit-cart{
+   margin-top: 40px;
+    }
+    .low-text{
+    font-size: 1.1rem;
+    color:black;
+    font-weight: bolder;
+}
+    
+    #sign-up input{
+        outline: none;
+        border: 1px solid #e7e7e7;
+        padding-block: 6.4px;
+        margin-right: 2px;
+        padding-inline: 10px;
+    }
+    #sign-up button{
+         padding: 7px 10px ;
+        border: none;
+        background-color:  #0a8371;
+        color: whitesmoke;
+    }
+    
+    @media (max-width:760px) {
+    
+        #sign-up{
+            margin-top: 10px;
+       }
+    }

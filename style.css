@@ -236,7 +236,13 @@ flex-wrap: wrap;
                     background-color:  #d9a3568a;
                     }
                  
+@media (max-width:396px) {
 
+    .feature-items{
+        width: 100%;
+    }
+    
+}
 /* Featured Products */
 #featured-products{
 margin-top: 60px;
